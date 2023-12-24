@@ -1,0 +1,33 @@
+   <div className="eye-container">
+            <div id="eye" className="eye"></div>
+          </div>
+          <div className="eye-container">
+            <div id="eye" className="eye"></div>
+          </div>
+
+
+              const eyeContainer = document.querySelector(".eye-container");
+
+    const angle = (cx, cy, ex, ey) => {
+      const dy = ey - cy;
+      const dx = ex - cx;
+      let theta = Math.atan2(dy, dx);
+      theta *= 180 / Math.PI;
+      return theta;
+    };
+    const boundingBox = eyeContainer.getBoundingClientRect();
+    const centerX = boundingBox.left + boundingBox.width / 2;
+    const centerY = boundingBox.top + boundingBox.height / 2;
+    const handleMouseMove = (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+
+      const angleDeg = angle(mouseX, mouseY, centerX, centerY);
+    };
+
+    eyeContainer.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      eyeContainer.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);

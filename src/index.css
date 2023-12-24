@@ -73,7 +73,7 @@ html {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  transition: all 1.5s;
+  transition: all 1s;
 }
 
 @media(prefers-reduced-motion){
@@ -102,4 +102,71 @@ html {
   top: 25%;
   left: 10%;
   box-sizing: border-box;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 30%;
+}
+
+.project-image:hover img{
+  opacity: 80%;
+  transition-duration: 1.3s;
+}
+
+.hover-lines span {
+  position: absolute;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.top-line, .bottom-line {
+  left: 0;
+  right: 0;
+  height: 2px;
+  transform: scaleX(0);
+}
+
+.top-line {
+  top: 3px;
+  transform-origin: center;
+}
+
+.bottom-line {
+  bottom: 3px;
+  transform-origin: center;
+}
+
+.left-line, .right-line {
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: scaleY(0);
+}
+
+.left-line {
+  left: 3px;
+  transform-origin: center;
+}
+
+.right-line {
+  right: 3px;
+  transform-origin: center;
+}
+
+.project-image:hover .top-line, 
+.project-image:hover .bottom-line {
+  transform: scaleX(0.98);
+}
+
+.project-image:hover .left-line, 
+.project-image:hover .right-line {
+  transform: scaleY(0.98);
 }
