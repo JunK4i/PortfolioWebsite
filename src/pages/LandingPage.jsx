@@ -1,16 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FaCalendar } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import "../index.css";
 function LandingPage() {
   const [navBarHeight, setNavBarHeight] = useState(0);
   const mainHeight = window.innerHeight - navBarHeight - 10;
+  const experienceRef = useRef(null);
+  const contactRef = useRef(null);
+  const location = useLocation();
+
   useEffect(() => {
     const navBar = document.querySelector("nav");
     setNavBarHeight(navBar.clientHeight);
   }, []);
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const section = location.state.scrollTo;
+      if (section === "experience" && experienceRef.current) {
+        experienceRef.current.scrollIntoView({ behavior: "smooth" });
+      } else if (section === "contact" && contactRef.current) {
+        contactRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   // run everytime the element visibility changes
   const observer = new IntersectionObserver((entries) => {
@@ -30,7 +45,7 @@ function LandingPage() {
   return (
     <main className="max-w-screen bg-orange-50 dark:bg-stone-900">
       <nav>
-        <NavBar />
+        <NavBar experienceRef={experienceRef} contactRef={contactRef} />
       </nav>
       <div
         style={{
@@ -63,7 +78,7 @@ function LandingPage() {
           />
         </section>
       </div>
-      <section className="h-screen p-5">
+      <section ref={experienceRef} className="h-screen p-5">
         <ol className="border-s border-slate-500 dark:border-gray-700 relative">
           <li className="hide ms-6 mb-10">
             <span className="bg-amber-400 -start-4 absolute flex items-center justify-center w-10 h-10 rounded-full">

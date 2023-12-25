@@ -21,7 +21,7 @@ const ProjectPage = () => {
     );
   }
 
-  const { images, videos, techStack, description, links, year } = project;
+  const { images, videos, techStack, description, links, date } = project;
 
   const formatDescription = (description) => {
     return description.split("\n\n").map((paragraph, paraIndex) => {
@@ -54,17 +54,18 @@ const ProjectPage = () => {
         useKeyboardArrows={true}
       >
         {videos.map((video, index) => (
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full pb-8">
             <ReactPlayer
               url={video}
               height="500px"
               width="800px"
               controls="true"
+              screenfull="true"
             />{" "}
           </div>
         ))}
         {images.map((image, index) => (
-          <div key={index} className=" h-96">
+          <div key={index} className=" h-[30rem]">
             <img
               src={image}
               alt={`Slide ${index}`}
@@ -78,7 +79,7 @@ const ProjectPage = () => {
           {title}
         </h1>
         <span className="text-slate-900 dark:text-green-200 text-md px-1 mb-3 ml-4 font-sans font-bold bg-green-700 rounded-sm">
-          {year}
+          {date}
         </span>
       </div>
       <div className="tech-stack mb-4">

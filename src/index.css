@@ -39,9 +39,10 @@ code,
 pre{margin:0px;}
 
 
-html {
+html body {
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @keyframes animate-typing {

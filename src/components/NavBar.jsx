@@ -2,9 +2,11 @@ import { useNavigate } from "react-router-dom";
 import useToggle from "../hooks/useToggle.jsx";
 import { DarkThemeToggle, Button, Timeline } from "flowbite-react";
 
-function NavBar() {
+function NavBar({ experienceRef, contactRef }) {
   const [isCollapsed, toggleIsCollapsed] = useToggle(true);
   const navigate = useNavigate();
+  const executeScroll = (ref) =>
+    ref.current.scrollIntoView({ behavior: "smooth" });
   return (
     <div className="md:items-center md:grid md:grid-cols-3 text-slate-900 dark:text-gray-400 flex justify-between max-w-screen-xl p-4 mx-auto font-mono text-2xl font-extrabold">
       <div
@@ -33,7 +35,9 @@ function NavBar() {
           <li>
             <div
               className="group hover:dark:text-yellow-300 hover:cursor-pointer transition duration-150"
-              onClick={() => navigate("/experience")}
+              onClick={() => {
+                navigate("/", { state: { scrollTo: "experience" } });
+              }}
             >
               Experience
               <span className="block max-w-0 md:pt-1 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-gray-400 group-hover:h-1  bg-slate-900"></span>
@@ -42,7 +46,7 @@ function NavBar() {
           <li>
             <div
               className="group hover:dark:text-yellow-300 hover:cursor-pointer transition duration-150"
-              onClick={() => navigate("/contact")}
+              onClick={() => navigate("/", { state: { scrollTo: "contact" } })}
             >
               Contact
               <span className="block max-w-0 md:pt-1 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-gray-400 group-hover:h-1 bg-slate-900"></span>

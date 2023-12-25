@@ -1,26 +1,26 @@
 [
     {
         "title": "Multi-Disciplinary Project - Android App",
-        "images": ["/MDP_1.jpeg", "/MDP_2.png", "/MDP_3.png", "/MDP_4.png", "/MDP_5.png", "/MDP_6.png", "/MDP_7.png"],
+        "images": ["/MDP_1.jpeg", "/MDP_2.png"],
         "videos": ["https://www.youtube.com/watch?v=S1mjmqjEKJc"],
         "techStack": ["Android Studio (Java)", "Raspberry Pi (Python)"],
         "description": "The Multi-Disciplinary Project requires students to take up different roles, and work together to achieve two tasks: \nThe first task is to traverse a maze and collect visual information in the fastest time.\nThe second task is to follow a specified path based on information received through visual information, and successfully park the robot back at its original location.\n \nI was tasked with coming up with an android app that has the following requirements:\n1. Robust Bluetooth Connection with Raspberry Pi.\n2. Receive and display information provided by robots sensors and display dynamically on the screen.\n3. UI to setup map configuration and to send this information to the robot prior to the maze run for processing.\n \nUnlike most students who mainly copied from senior code, I intentionally wrote this solution from scratch in order to gain a better understanding of android development.\n \nApp Design Features:\n \nConsistent Game State: Utilized MutableLiveData for maintaining consistent game state across various fragments.\nWell-Organized Codebase: The application features well-defined classes and helper classes, ensuring ease of understanding and extensibility.\nMVVM Architecture: Implemented the Model-View-ViewModel (MVVM) pattern for clear separation of concerns. The Model handles data and game logic, the ViewModel acts as a bridge between the Model and the View, exposing relevant data, and the View is free of logic, focusing solely on the user interface.\n \n Video Editing: I was also one of the main editors for the video submission. I used Canva to edit the video.",
         "links": [
             { "title": "GitHub Repo", "url": "https://github.com/JunK4i/CZ3004-MDP-Android-App" }
         ], 
-        "year": 2022 
+        "date": "2022-10"
     },
     {
-        "title": "JARM Project 2",
-        "images": ["https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"],
-        "videos": [],
-        "techStack": ["Vue", "Express", "MySQL"],
-        "description": "This is a detailed description of JARM Project 2.",
+        "title": "Dutch Auction - Ethereum Blockchain",
+        "images": ["/Blockchain_1.png"],
+        "videos": ["https://youtu.be/oxeA5xsQoOQ?si=LKKetpTbcwK1dMvT"],
+        "techStack": ["Solidity", "React", "Metamask", "Ethereum","Web3Js", "EtherJs", "Hardhat", "TailwindCSS"],
+        "description": "1. Developed a Web 3.0 React Web application interfacing with a Solidity contract deployed on the Ethereum Hardhat Local Blockchain.\n \n2. Utilized web3js and etherjs to establish connections and facilitate transactions between the frontend React web app and the Dutch Auction Solidity contract on the local Hardhat blockchain.\n \n3. Explored the Web3ReactProvider library, simplifying integration with multiple web3 providers concurrently.\n \n4. Co-authored a term paper addressing Security, Privacy, and Scalability issues associated with Dutch Auction blockchain implementations. Proposed innovative solutions to mitigate front-running problems.\n \n 5. Implemented user login and protected routes",
         "links": [
-            { "title": "GitHub Repo", "url": "https://github.com/project2" },
-            { "title": "Live Demo", "url": "https://project2-demo.com" }
+            { "title": "Download Code", "url": "/Dutch_Auction.zip" },
+            { "title": "Download Term Paper", "url": "/CZ4153_Term_Paper.pdf" }
         ],
-        "year": 2022 
+        "date": "2022-11" 
     },
     {
         "title": "JARM Project 3",
@@ -32,6 +32,6 @@
             { "title": "GitHub Repo", "url": "https://github.com/project3" },
             { "title": "Live Demo", "url": "https://project3-demo.com" }
         ],
-        "year": 2022 
+        "date": "2022" 
     }
 ]
