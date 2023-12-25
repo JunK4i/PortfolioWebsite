@@ -5,18 +5,18 @@ import ProjectPage from "./pages/ProjectPage.jsx";
 import ProjectGalleryPage from "./pages/ProjectGalleryPage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import { Flowbite } from "flowbite-react";
+import { ThemeProvider } from "./hooks/ThemeContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Flowbite mode="dark">
-      <BrowserRouter>
+    <BrowserRouter>
+      <ThemeProvider>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/projectgallery" element={<ProjectGalleryPage />} />
           <Route path="/project/:title" element={<ProjectPage />} />
         </Routes>
-      </BrowserRouter>
-    </Flowbite>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );

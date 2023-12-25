@@ -1,12 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import useToggle from "../hooks/useToggle.jsx";
-import { DarkThemeToggle, Button, Timeline } from "flowbite-react";
+import DarkThemeToggle from "./DarkThemeToggle.jsx";
 
 function NavBar({ experienceRef, contactRef }) {
   const [isCollapsed, toggleIsCollapsed] = useToggle(true);
   const navigate = useNavigate();
-  const executeScroll = (ref) =>
-    ref.current.scrollIntoView({ behavior: "smooth" });
   return (
     <div className="md:items-center md:grid md:grid-cols-3 text-slate-900 dark:text-gray-400 flex justify-between max-w-screen-xl p-4 mx-auto font-mono text-2xl font-extrabold">
       <div

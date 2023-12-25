@@ -56,6 +56,7 @@ const ProjectPage = () => {
         {videos.map((video, index) => (
           <div className="flex justify-center w-full pb-8">
             <ReactPlayer
+              key={index}
               url={video}
               height="500px"
               width="800px"
