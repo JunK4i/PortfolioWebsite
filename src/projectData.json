@@ -38,28 +38,29 @@
         "date": "2023-10" 
     },
     {
-        "title": "Gender Classification Research Project",
-        "images": [""],
-        "cover": ["/Gender_Classification_Cover.png"],
+        "title": "Cyber Threat Intelligence Project",
+        "images": ["/CTI/1.png","/CTI/2.png","/CTI/3.png"],
+        "cover": ["/CTI/Cover.png"],
         "videos": [],
-        "techStack": ["Angular", "Django", "PostgreSQL"],
-        "description": "This is a detailed description of JARM Project 3.",
+        "techStack": ["Python", "Selenium", "Onion Tor Browser", "Tableu", "VirusTotal"],
+        "description": "Utilized the Tor network (Onion) for secure and anonymous data gathering while scraping and investigating ransomware postings on the Dark Web using Selenium.\n \nConducted threat actor profiling through OSINT techniques, investigating the infrastructure and resources employed by threat actors using tools such as VirusTotal. Further analysis was performed using the MITRE, Diamond model, and TTP frameworks.\n \nEmployed Tableau as a data processing tool to analyze the scraped data, categorize and identify attack patterns, and provide insights into vulnerabilities within specific industries.\n \n Prepared a report regarding cyber security threats through social media. \n \nSummarised and consolidated information from various security reports to provide a comprehensive overview of the social media threat landscape.\n \n Conducted in-depth case study analysis of 2 major social media breaches using the cyber kill chain, diamond model and MITRE ATT&CK framework.\n \n Proposed fundamental solutions to mitigate social media threats.",
         "links": [
-            { "title": "GitHub Repo", "url": "https://github.com/project3" },
-            { "title": "Live Demo", "url": "https://project3-demo.com" }
+            { "title": "Dark Web Ransomware Analysis (Report, Data Visualisation, Web Scraping)", "url": "/CTI/CTI_Project.zip" },
+            { "title": "Social Media Threats Powerpoint", "url": "/CTI/CTI_GroupPresentation.pptx" }
         ],
         "date": "2023-10" 
     },
     {
-        "title": "Gender Classification Research Project",
-        "images": [""],
-        "cover": ["/Gender_Classification_Cover.png"],
+        "title": "BumbleTele - Telegram Bot",
+        "images": ["/BumbleTele/Bumble_1.jpeg","/BumbleTele/1.png","/BumbleTele/2.png","/BumbleTele/3.png","/BumbleTele/4.png"],
+        "cover": ["/BumbleTele/Cover.png"],
         "videos": [],
-        "techStack": ["Angular", "Django", "PostgreSQL"],
-        "description": "This is a detailed description of JARM Project 3.",
+        "techStack": ["Python", "Telegram", "pyTelegramBotAPI", "telegraf", "React", "expressJs"],
+        "description": "I wanted to replicate the bumble question game function on telegram and set out on implementing it.\n \nThe first iteration was a long-polling bot hosted on pythonAnywhere, with firebase to store chat information.\n \nCurrently transitioning to web-hook based bot, using the telegraf library to support a react-web miniapp on telegram!\n \n Successfully hosted the expressJs webhook on railway, webapp is currently under development.",
         "links": [
-            { "title": "GitHub Repo", "url": "https://github.com/project3" },
-            { "title": "Live Demo", "url": "https://project3-demo.com" }
+            { "title": "Python Long-polling App", "url": "https://github.com/project3" },
+            { "title": "Express Webhook", "url": "https://github.com/JunK4i/telenodewebhook" },
+            { "title": "React MiniApp", "url": "https://github.com/JunK4i/telenodewebhook" },
         ],
         "date": "2023-10" 
     },
