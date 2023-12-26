@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function ProjectPage() {
   const navigate = useNavigate();
   const projects = projectData;
-  const renderCard = (title, image) => {
+  const renderCard = (title, cover) => {
     return (
       <div
         className="project-image"
@@ -12,7 +12,7 @@ function ProjectPage() {
           navigate("/project/" + title);
         }}
       >
-        <img className="h-auto max-w-full rounded-lg" src={image} alt=""></img>
+        <img className="h-auto max-w-full rounded-lg" src={cover} alt=""></img>
         <title className="absolute inset-0 flex items-center justify-center font-sans text-5xl font-extrabold text-center">
           {title}
         </title>
@@ -34,7 +34,7 @@ function ProjectPage() {
       <section>
         <div className="md:grid-cols-4 grid grid-cols-2 gap-4">
           {projects.map((project) => (
-            <div>{renderCard(project.title, project.images[0])}</div>
+            <div>{renderCard(project.title, project.cover)}</div>
           ))}
         </div>
       </section>
