@@ -63,45 +63,5 @@
             { "title": "React MiniApp", "url": "https://github.com/JunK4i/telenodewebhook" }
         ],
         "date": "2023-10" 
-    },
-    {
-        "title": "Gender Classification Research Project",
-        "images": [""],
-        "cover": ["/Gender_Classification_Cover.png"],
-        "videos": [],
-        "techStack": ["Angular", "Django", "PostgreSQL"],
-        "description": "This is a detailed description of JARM Project 3.",
-        "links": [
-            { "title": "GitHub Repo", "url": "https://github.com/project3" },
-            { "title": "Live Demo", "url": "https://project3-demo.com" }
-        ],
-        "date": "2023-10" 
-    },
-    {
-        "title": "Gender Classification Research Project",
-        "images": [""],
-        "cover": ["/Gender_Classification_Cover.png"],
-        "videos": [],
-        "techStack": ["Angular", "Django", "PostgreSQL"],
-        "description": "This is a detailed description of JARM Project 3.",
-        "links": [
-            { "title": "GitHub Repo", "url": "https://github.com/project3" },
-            { "title": "Live Demo", "url": "https://project3-demo.com" }
-        ],
-        "date": "2023-10" 
-    },
-    {
-        "title": "Gender Classification Research Project",
-        "images": [""],
-        "cover": ["/Gender_Classification_Cover.png"],
-        "videos": [],
-        "techStack": ["Angular", "Django", "PostgreSQL"],
-        "description": "This is a detailed description of JARM Project 3.",
-        "links": [
-            { "title": "GitHub Repo", "url": "https://github.com/project3" },
-            { "title": "Live Demo", "url": "https://project3-demo.com" }
-        ],
-        "date": "2023-10" 
     }
-    
 ]
