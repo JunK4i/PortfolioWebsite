@@ -59,6 +59,7 @@ function LandingPage() {
           </h1>
           <TypeAnimation
             style={{
+              paddingTop: "1rem",
               whiteSpace: "pre-line",
               height: "195px",
               display: "block",
@@ -116,6 +117,33 @@ function LandingPage() {
             </a>
           </li>
         </ol>
+      </section>
+      <section
+        ref={contactRef}
+        className="text-slate-900 dark:text-white w-full h-screen"
+      >
+        <div className="text-7xl dark:text-amber-300 m-5">CONTACT</div>
+        <div className="dark:border-amber-300 border-slate-900 border-t"></div>
+        <div className="flex items-center justify-between px-6 py-3">
+          <div className="text-slate-900 dark:text-amber-300 pr-2 text-2xl">
+            E-mail
+          </div>
+          <div>kohjunkai31@gmail.com</div>
+        </div>
+        <div className="flex items-center justify-between px-6 py-3">
+          <div className="text-slate-900 dark:text-amber-300 pr-2 text-2xl">
+            Github
+          </div>
+          <a href="https://github.com/JunK4i">https://github.com/JunK4i</a>
+        </div>
+        <div className="flex items-center justify-between px-6 py-3">
+          <div className="text-slate-900 dark:text-amber-300 pr-2 text-2xl">
+            Linkedin
+          </div>
+          <a href="https://www.linkedin.com/in/koh-jun-kai-398191207/">
+            https://www.linkedin.com/in/koh-jun-kai-398191207/
+          </a>
+        </div>
       </section>
     </main>
   );

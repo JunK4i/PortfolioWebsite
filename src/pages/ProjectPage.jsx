@@ -43,7 +43,7 @@ const ProjectPage = () => {
   };
 
   return (
-    <div className="project-container p-4">
+    <div className="bg-orange-50 dark:bg-stone-900 p-4">
       <nav>
         <NavBar />
       </nav>
@@ -97,7 +97,7 @@ const ProjectPage = () => {
         </ul>
       </div>
 
-      <div className="project-description mb-4">
+      <div className="project-description text-slate-900 dark:text-white mb-4">
         <h2 className="text-slate-900 dark:text-amber-300 text-xl font-bold">
           Description
         </h2>

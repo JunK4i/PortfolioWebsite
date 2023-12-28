@@ -13,7 +13,7 @@ function ProjectPage() {
         }}
       >
         <img className="h-auto max-w-full rounded-lg" src={cover} alt=""></img>
-        <title className="absolute inset-0 flex items-center justify-center font-sans text-5xl font-extrabold text-center">
+        <title className="dark:text-white text-slate-900 absolute inset-0 flex items-center justify-center font-sans text-5xl font-extrabold text-center">
           {title}
         </title>
         <div className="hover-lines">
@@ -27,12 +27,12 @@ function ProjectPage() {
   };
 
   return (
-    <main className="max-w-screen bg-orange-50 dark:bg-stone-900">
+    <main className="max-w-screen bg-orange-50 dark:bg-stone-900 h-screen">
       <nav>
         <NavBar />
       </nav>
       <section>
-        <div className="md:grid-cols-4 grid grid-cols-2 gap-4">
+        <div className="md:grid-cols-3 grid grid-cols-1 gap-4">
           {projects.map((project) => (
             <div>{renderCard(project.title, project.cover)}</div>
           ))}

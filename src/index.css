@@ -83,28 +83,6 @@ html body {
   }
 }
 
-.eye-container .eye {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  display: block;
-  background: white;
-  margin: 0 20px;
-  border-radius: 50%;
-}
-
-.eye-container .eye::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background: black;
-  border-radius: 50%;
-  top: 25%;
-  left: 10%;
-  box-sizing: border-box;
-}
-
 .project-image {
   position: relative;
   overflow: hidden;
@@ -116,6 +94,7 @@ html body {
   height: auto;
   opacity: 30%;
 }
+
 
 .project-image:hover img{
   opacity: 80%;
