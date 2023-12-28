@@ -60,7 +60,7 @@
         "links": [
             { "title": "Python Long-polling App", "url": "https://github.com/project3" },
             { "title": "Express Webhook", "url": "https://github.com/JunK4i/telenodewebhook" },
-            { "title": "React MiniApp", "url": "https://github.com/JunK4i/telenodewebhook" },
+            { "title": "React MiniApp", "url": "https://github.com/JunK4i/telenodewebhook" }
         ],
         "date": "2023-10" 
     },
