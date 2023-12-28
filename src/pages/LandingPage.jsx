@@ -101,7 +101,7 @@ function LandingPage() {
           />
         </section>
       </div>
-      <section ref={experienceRef} className="h-screen p-5">
+      <section ref={experienceRef} className="h-min-screen p-5">
         <ol className="border-s border-slate-500 dark:border-gray-700 relative">
           <li className="hide ms-6 mb-10">
             <span className="bg-amber-400 -start-4 absolute flex items-center justify-center w-10 h-10 rounded-full">
