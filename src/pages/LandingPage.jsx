@@ -20,7 +20,7 @@ function LandingPage() {
     if (location.state?.scrollTo) {
       const section = location.state.scrollTo;
       if (section === "experience" && experienceRef.current) {
-        experienceRef.current.scrollIntoView({ behavior: "smooth" });
+        experienceRef.current.scrollIntoView();
       } else if (section === "contact" && contactRef.current) {
         contactRef.current.scrollIntoView({ behavior: "smooth" });
       }
