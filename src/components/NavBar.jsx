@@ -2,11 +2,15 @@ import { useNavigate } from "react-router-dom";
 import useToggle from "../hooks/useToggle.jsx";
 import DarkThemeToggle from "./DarkThemeToggle.jsx";
 
-function NavBar({ experienceRef, contactRef }) {
+function NavBar() {
   const [isCollapsed, toggleIsCollapsed] = useToggle(true);
   const navigate = useNavigate();
   return (
-    <div className="md:items-center md:grid md:grid-cols-3 text-slate-900 dark:text-gray-400 flex justify-between max-w-screen-xl p-4 mx-auto font-mono text-2xl font-extrabold">
+    <div
+      className={`${
+        !isCollapsed && "pb-44"
+      } md:items-center md:grid md:grid-cols-3 text-slate-900 dark:text-gray-400 flex justify-between max-w-screen-xl p-4 mx-auto font-mono text-2xl font-extrabold`}
+    >
       <div
         className="dark:text-amber-300 hover:cursor-pointer ml-1 text-4xl"
         onClick={() => {
@@ -18,9 +22,9 @@ function NavBar({ experienceRef, contactRef }) {
       <div
         className={`${
           isCollapsed && "hidden"
-        } md:block md:w-auto  md:static w-full flex justify-center absolute top-16 right-0 left-0 p-3`}
+        } md:block md:w-auto md:static w-full flex justify-center absolute top-16 right-0 left-0 p-3 z-50`}
       >
-        <ul className="md:p-0 border-slate-900 md:flex-row md:space-x-8md:mt-0 md:border-0 dark:border-gray-700 dark:text-gray-400 text-slate-900 flex flex-col justify-center w-full gap-4 p-3 border rounded-lg">
+        <ul className="md:p-0 border-slate-900 md:flex-row md:space-x-8md:mt-0 md:border-0 dark:border-gray-700 dark:text-gray-400 text-slate-900 z-100 flex flex-col justify-center w-full gap-4 p-3 border rounded-lg">
           <li>
             <div
               className="group hover:dark:text-yellow-300 hover:cursor-pointer transition duration-150"

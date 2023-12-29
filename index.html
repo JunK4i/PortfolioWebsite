@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <script>
-      if (
-        !localStorage.getItem('color-theme') &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-      ) {
+      if (localStorage.getItem('color-theme') === null) {
         document.documentElement.classList.add('dark');
       } else if (localStorage.getItem('color-theme') === 'dark') {
         document.documentElement.classList.add('dark');
