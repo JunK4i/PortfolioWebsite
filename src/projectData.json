@@ -1,5 +1,28 @@
 [
     {
+        "title": "TechFest 1st Place Winner - AI Dungeons & Dragons",
+        "images": [],
+        "cover": ["/techfest/cover.png"],
+        "videos": ["https://youtu.be/dXJcjxrziuo?si=lNNJvBJuFhhWfZ2v"],
+        "techStack": ["ComfyUi", "SillyTavern", "LORa", "Llama2"],
+        "description": "AI Dungeons and Dragons revolutionizes the role-playing game (RPG) landscape by offering a unique solution to the challenge of finding Dungeons & Dragons (D&D) groups. This platform combines cutting-edge AI to generate dynamic dialogue and storylines, while simultaneously using AI illustrations to bring to life stunning landscapes and vivid characters. Players can thus dive into D&D quests on their own, experiencing a blend of classic RPG gameplay with innovative AI-generated content.",
+        "links": [
+            { "title": "Project Writeup", "url": "https://devpost.com/software/ai-d-d" },
+            { "title": "Final Presentation Slides", "url": "/techfest/Techfest Group 118.pptx" }
+        ], 
+        "date": "2024-01"
+    },
+    {
+        "title": "SAMIC - Computer Vision Research Assistant",
+        "images": [],
+        "cover": ["/samic/samic_cover.png"],
+        "videos": ["https://youtu.be/lqyUcJSEYKU"],
+        "techStack": ["Segment Anything", "ONNX Runtime", "ReactJS", "FastApi"],
+        "description": "The project aims to create a circuit board labelling webapp. This works by using a fine-tuned segmentation model to highlight the circuit board of interest. By using the segmentation model and running it on the frontend using the onnx runtime, we are able to input prompts into the model in order to get segmentation predictions. The researcher may also add, remove, paint and erase to further specify the area in which he wishes to label. Subsequently, the labelled image can be downloaded as a black and white cutout using the generate cutout and download cutout features.",
+        "links": [], 
+        "date": "2024-03"
+    },
+    {
         "title": "Multi-Disciplinary Project - Android App",
         "images": ["/MDP/MDP_1.jpeg", "/MDP/MDP_5.png","/MDP/MDP_3.png","/MDP/MDP_4.png","/MDP/MDP_7.png"],
         "cover": ["/MDP/MDP_Cover.jpeg"],
